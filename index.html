@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Merriweather+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:wght@300;400;600&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+            <div class="search"> 
+                <input type="text" placeholder="City Name" class="searchBar" id="cityName" maxlength="20" required>
+                <input type="text" placeholder="Country Code" class="countryName" id="country" required>
+                <button id="btn" class="submit-btn" onclick="getInfo()">Submit</button>
+            </div>
+            
+            <div id="weather-info">
+                <p><span id="temperature">27</span> &degC</p>
+                <img src="./images/clouds.png" width="150px" height="150px" alt="cloudy icon">
+            </div>
+
+            <div id="fhv-info">
+                <div class="feels-like">
+                    <p class="feelsP">Feels like</p>
+                    <p><span id="feelsTemp" class="feelsLike-temp">31</span><span class="celc"> &degC</span></p>
+                </div>
+
+                <div class="humidity">
+                    <p>Humidity</p>
+                    <p><span id="humidity-perc" class="humidity-percent">53</span>%</p>
+                </div>
+
+                <div class="visibility">
+                <p>Wind Speed</p>
+                <p><span id="visbilityRange" class="visibility-range">4.5</span>km/h</p>
+                </div>
+            </div>
+
+            <div id="ww-info">
+                <div class="max-temp">
+                    <p class="max">Highest</p>
+                    <p><span id="maxTemperature" class="max=temp">5</span><span class="celc"> &degC</span></p>
+                </div>
+                <div class="min-temp">
+                    <p class="min">Lowest</p>
+                    <p><span id="minTemp" class="tempC">8</span><span class="celc"> &degC</span></p>
+                </div>
+            </div>
+    </div>
+
+    <script src="main.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #040d14;
+}
+
+.container {
+    display: flex;
+    margin-top: 20vh;
+    background: linear-gradient(#e66465, #9198e5);
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: poppins;
+    flex-direction: column;
+    border-radius: 30px;
+    color: white;
+}
+
+.element {
+    background-color: white;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.searchBar{
+    padding: 20px 0px 20px 20px;
+    border-radius: 210px;
+    border-style: none;
+    width: 130px;
+}
+.countryName{
+    width: 130px;
+    padding: 20px 0px 20px 20px;
+    border-radius: 210px;
+    border-style: none;
+}
+
+.countryName:focus{
+    outline: none;
+    background-color: #e2e2e2;
+}
+.searchBar:focus{
+    outline: none;
+    background-color: #e2e2e2;
+}
+
+.submit-btn{
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    font-family: poppins;
+    letter-spacing: 1.4px;
+    background-color: #9198e5;
+    color: white;
+    transition: background-color 300ms, translate 100ms, box-shadow 300ms;
+}
+
+.submit-btn:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.submit-btn:active{
+    translate: 1px 1px;
+
+}
+
+#weather-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+#weather-info p {
+    font-size: 4rem;
+    letter-spacing: 1px;
+}
+
+#fhv-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 30px;
+}
+
+#ww-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+/* ----------FEELS LIKE TEMP---------------- */
+.feels-like{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.feelsP{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    color: #fcfcfc;
+}
+
+.feelsLike-temp{
+    font-size: 2rem;
+    letter-spacing: 4px;
+}
+
+/* --------------HUMIDITY TEMP---------------------- */
+
+.humidity{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+
+}
+
+.humidity p{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.humidity-percent{
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+/* --------------VISIBILITY TEMP---------------------- */
+
+.visibility {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.visibility p {
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+
+}
+
+.visibility-range{
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+/* --------------WIND SPEED---------------------- */
+
+.max-temp {
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.max{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.max-temp {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.min-temp{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+}
+
+.min{
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+}
+
+.tempC {
+    font-size: 2rem;
+    letter-spacing: 1px;
+}
+
+.celc{
+    font-size: 1.5rem;
+    letter-spacing: 1px;
+}
